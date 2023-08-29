@@ -12,10 +12,6 @@
   object-position: top;
 }
 
-.carousel-item {
-  height: 100vh;
-}
-
 .overlay {
   font-family: "Ubuntu Condensed", sans-serif;
   position: absolute;
@@ -27,6 +23,17 @@
   z-index: 99;
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 9999 !important;
+}
+
 .overlay h3 {
   font-size: 50px;
+}
+
+@media (width > 1024px) {
+  .carousel-item {
+    height: 100vh;
+  }
 }
